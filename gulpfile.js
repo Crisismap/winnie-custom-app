@@ -147,9 +147,10 @@ var utils = {
 };
 
 var winnieCore = {
-    id: 'core',
-    srcDir: './core',
-    build: false
+    id: 'winnie-core',
+    srcDir: './external/winnie-core',
+    distDir: './dist',
+    build: true
 };
 
 var commonStyles = {
@@ -382,11 +383,6 @@ require('./external/GMXBuilder')(gulp, {
     id: 'viewer',
     htmlfile: 'html/index.html',
     components: [].concat(coreComponents, virtualLayers, [{
-        id: 'winnie',
-        srcDir: './external/winnie',
-        distDir: './core',
-        build: false
-    }, {
         id: 'app',
         srcDir: './app',
         build: false

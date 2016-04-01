@@ -37,6 +37,6 @@
 [submodule "external/leaflet.markercluster"]
 	path = external/leaflet.markercluster
 	url = git@github.com:Leaflet/leaflet.markercluster
-[submodule "external/winnie"]
-	path = external/winnie
-	url = git@github.com:kosmosnimki/winnie
+[submodule "external/winnie-core"]
+	path = external/winnie-core
+	url = git@github.com:Kosmosnimki/winnie-core.git
