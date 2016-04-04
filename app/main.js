@@ -4,7 +4,7 @@ $(document).ready(function () {
         var winnieCm = nsGmx.createGmxApplication(container, config);
         winnieCm.create().then(function () {
             console.log('ready');
-            window.runUserScript.call(this, winnieCm);
+            window.runUserScript && window.runUserScript.call(this, winnieCm);
         }, function (err) {
             console.log('failed to create gmxApplication');
         })
